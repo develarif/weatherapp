@@ -4,29 +4,27 @@
 <head>
 	<title>Weather Application</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.google.com/">
 </head>
 
 <body>
-	<div class="container">
-		<div class="heading">
-			<h1>Weather Application</h1>
-		</div>
+	<main class="container">
+		<h1 class="heading">Weather Application</h1>
 		<div class="input">
-			<input type="text" name="search" class="input-search" placeholder="">
+			<input type="text" id="searchInput" class="input-search" placeholder="Enter a city">
+			<button class="input-btn" id="searchBtn">Search</button>
 		</div>
-		<div class="box">
+		<div class="box" id="box">
 			<div class="location">
-				<div class="location-city"></div>
-				<div class="location-date"></div>
+				<div id="location-city" class="location-city"></div>
+				<div id="location-date" class="location-date"></div>
 			</div>
 			<div class="temperature">
-				<div class="temperature-temp"><span></span></div>
-				<div class="temperature-type"></div>
-				<div class="temperature-range"></div>
+				<div id="temperature-temp" class="temperature-temp"></div>
+				<div id="temperature-type" class="temperature-type"></div>
+				<div id="temperature-range" class="temperature-range"></div>
 			</div>
 		</div>
-	</div>
+	</main>
 
 	<script src="app.js"></script>
 </body>
